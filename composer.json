@@ -1,0 +1,15 @@
+{
+    "name": "regionhalland/visithalland-custom-taxonomies",
+    "description": "Wordpress plugin for adding custom taxonomies used on https://www.visithalland.com.",
+    "type": "wordpress-muplugin",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Sebastian Marcusson",
+            "email": "sebastian@digitaliseringsbyran.se"
+        }
+    ],
+    "require": {
+        "php": ">=7"
+    }
+}
