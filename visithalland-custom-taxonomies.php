@@ -26,7 +26,7 @@ class VisithallandCustomTaxonomies
                     'taxonomy_concept',
                     array('meet_local', 'trip', 'happening', 'places', 'editor_tip', 'companies'),
                     array(
-                        'rewrite' 					=> array('slug' => '/'),
+                        'rewrite'                   => array('slug' => 'upplevelser'),
                         'labels'                     => array(
                             'name'                       => _x('Koncept', 'Taxonomy General Name', 'text_domain'),
                             'singular_name'              => _x('Koncept', 'Taxonomy Singular Name', 'text_domain'),
