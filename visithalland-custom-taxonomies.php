@@ -24,7 +24,7 @@ class VisithallandCustomTaxonomies
             {
                 register_taxonomy(
                     'taxonomy_concept',
-                    array('meet_local', 'trip', 'happening', 'places', 'editor_tip', 'companies'),
+                    array('meet_local', 'spotlight', 'happening', 'places', 'editor_tip', 'companies', 'tips_guides'),
                     array(
                         'rewrite'                   => array('slug' => 'upplevelser'),
                         'labels'                     => array(
