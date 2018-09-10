@@ -19,18 +19,18 @@ class VisithallandCustomTaxonomies
     public function registerCustomTaxonomies()
     {
         // We only want to register the taxonomy if it does not already exist.
-        if (!taxonomy_exists('taxonomy_concept')) {
-            function create_taxonomy_concept()
+        if (!taxonomy_exists('experience')) {
+            function create_experience()
             {
                 register_taxonomy(
-                    'taxonomy_concept',
+                    'experience',
                     array('meet_local', 'spotlight', 'happening', 'places', 'editor_tip', 'companies', 'tips_guides'),
                     array(
                         'rewrite'                   => array('slug' => 'upplevelser'),
                         'labels'                     => array(
-                            'name'                       => _x('Koncept', 'Taxonomy General Name', 'text_domain'),
-                            'singular_name'              => _x('Koncept', 'Taxonomy Singular Name', 'text_domain'),
-                            'menu_name'                  => __('Koncept', 'text_domain'),
+                            'name'                       => _x('Upplevelse', 'Taxonomy General Name', 'text_domain'),
+                            'singular_name'              => _x('Upplevelse', 'Taxonomy Singular Name', 'text_domain'),
+                            'menu_name'                  => __('Upplevelse', 'text_domain'),
                         ),
                         'hierarchical'               => true,
                         'public'                     => true,
@@ -42,7 +42,7 @@ class VisithallandCustomTaxonomies
                     )
                 );
             }
-            add_action('init', 'create_taxonomy_concept');
+            add_action('init', 'create_experience');
         }
     }
 }
